@@ -1,9 +1,29 @@
 import java.util.ArrayList;
 
 public class Livro {
-    String nome;
-    Integer preco;
+    private String nome;
+    private Double preco;
+    ArrayList <Livro> livros = new ArrayList<>();
 
-    ArrayList<Usuario> usuarios = new ArrayList<>();
+    public Livro(String nome, Double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
 
 }
